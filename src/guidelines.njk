@@ -1,0 +1,209 @@
+---
+layout: "base.njk"
+title: "Guidelines"
+pageId: "guidelines"
+themes: [
+  {
+    name: "Identity & Representation",
+    icon: "/assets/img/guidelines-topic-identity.png"
+  },
+  {
+    name: "Religion, Faith & Spirituality",
+    icon: "/assets/img/guidelines-topic-religion.png"
+  },
+  {
+    name: "Trends in Muslim Communities",
+    icon: "/assets/img/guidelines-topic-trends.png"
+  },
+  {
+    name: "Global/Social Issues & Politics",
+    icon: "/assets/img/guidelines-topic-global.png"
+  },
+  {
+    name: "Racism & Islamophobia",
+    icon: "/assets/img/guidelines-topic-racism.png"
+  },
+  {
+    name: "Gender & Sexuality",
+    icon: "/assets/img/guidelines-topic-gender.png"
+  },
+  {
+    name: "Immigration & Diaspora",
+    icon: "/assets/img/guidelines-topic-immigration.png"
+  },
+  {
+    name: "Everyday Life For A Muslim",
+    icon: "/assets/img/guidelines-topic-everyday.png"
+  }
+]
+requirements: [
+  {
+    name: "Submission deadline",
+    id: "deadline",
+    icon: "/assets/img/guidelines-requirement-deadline.png",
+    text: "The deadline is August 1, 2020 11:59 pm. We recommend that you submit earlier so that your piece has an increased chance of acceptance."
+  },
+  {
+    name: "Eligibility",
+    id: "eligibility",
+    icon: "/assets/img/guidelines-requirement-eligibility.png",
+    text: "To submit, you need to be:<br>Muslim<br>A resident of B.C."
+  },
+  {
+    name: "Acceptance",
+    id: "acceptance",
+    icon: "/assets/img/guidelines-requirement-acceptance.png",
+    text: "Submission does not guarantee acceptance. Submissions may be rejected if they don’t meet the required standards of quality. Payment will be given upon acceptance for non-anonymous submissions."
+  }
+]
+---
+
+<div id="slide1">
+  <h1>
+    Find out the guidelines you need to follow
+    <br>
+    to submit content to the Anthology
+  </h1>
+</div>
+<div id="slide2">
+  <h1>What We Are Looking For</h1>
+  <p>
+    We are looking for your stories and experiences as a Muslim living in B.C. We want your opinions, ideas, and perspectives in relation to your identity as a
+    Muslim. Did you move here from afar? Are you a mother, and have experiences from raising your children? Are you a student, and something happened
+    in school that you want to tell? Is there a funny story about when you once were making wudu and a non-Muslim came in? Do you have an interesting
+    experience during a protest? Have you faced discriminiation as a Muslim? Were you barred from opportunities because of your gender? What is your
+    experience in the masjid? Give us your stories from your life as a student, something that happened at work, or everyday occurrences, regardless of how
+    mundane and irrelevant it may seem. We want to showcase the collective Muslim experience in the form of essays, short stories, poetry, and visual art.
+  </p>
+</div>
+<div id="slide3">
+  <h1>Possible Themes or Topics</h1>
+  <div id="themeContainer">
+    {% for theme in themes %}
+      <div class="theme">
+        <img class="icon" src="{{ theme.icon }}" alt="{{ theme.name }}">
+        <h4 class="caption">{{ theme.name }}</h4>
+      </div>
+    {% endfor %}
+  </div>
+  <p>
+    These are just examples and you are not restricted to any these themes or topics. If you’d like to run your idea by us before you start working on it, feel free to send an email.
+  </p>
+</div>
+<div id="slide4">
+  <h1>Other Requirements & Specifications</h1>
+  <div>
+    <div id="requirementContainer">
+      {% for spec in requirements %}
+        <div class="requirement" id="{{ spec.id }}">
+          <img class="icon" src="{{ spec.icon }}" alt="{{ spec.name }}">
+          <h4 class="name">{{ spec.name }}</h4>
+          <p class="text">{{ spec.text | safe }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div id="slide5">
+
+  <div id="tabLinks">
+    <button class="tabLink active" id="formatButton">
+      <img class="tabIcon" src="/assets/img/guidelines-icon-format.png" alt="Submission Format">
+      <h4>Submission Format</h4>
+    </button>
+    <button class="tabLink" id="categoriesButton">
+      <img class="tabIcon" src="/assets/img/guidelines-icon-categories.png" alt"Submission Categories">
+      <h4>Submission Categories</h4>
+    </button>
+    <button class="tabLink" id="confessionsButton">
+      <img class="tabIcon" src="/assets/img/guidelines-icon-confessions.png" alt="Anonymous Confessions">
+      <h4>Anonymous Confessions</h4>
+    </button>
+    <button class="tabLink" id="mediaButton">
+      <img class="tabIcon" src="/assets/img/guidelines-icon-media.png" alt="Mixed Media">
+      <h4>Mixed Media</h4>
+    </button>
+  </div>
+
+  <div id="tabbedGuidelines">
+
+    <div class="tabContent" id="submissionFormat">
+      <h4>File Naming Schema:</h4>
+      <i>firstnameLastname_submissionType_submissionDate.&lt;filetype&gt;</i>
+      <ul>
+        <li>Submission date must be in form YYYYMMDD</li>
+        <li>Examples:</li>
+        <ul>
+          <li>shahiraAzhar_poem_20200321.rtf</li>
+          <li>amalAbdullah_mixedMedia_20200103.png</li>
+        </ul>
+      </ul>
+      <br>
+      <h4>Poems, Essays and Short Stories:</h4>
+      <ul>
+        <li>.doc or .rtf filetype</li>
+        <li>Letter size page - 8.5 x 11 inches</li>
+        <li>Size 12 pt font</li>
+        <li>Arial font</li>
+        <li>Single spaced</li>
+        <li>Title page containing author’s name, email and phone number</li>
+        <li>Title page must also contain 3-5 line summary for essays and short stories</li>
+      </ul>
+      <br>
+      <h4>Mixed Media:</h4>
+      <ul>
+        <li>Artistic Piece</li>
+        <ul>
+          <li>.png or .PNG filetype</li>
+        </ul>
+        <li>Artist’s Statement</li>
+        <ul>
+          <li>Title of piece, artist’s name, email address and phone number</li>
+          <li>.doc or .rtf filetype</li>
+          <li>Letter size page - 8.5 x 11 inches</li>
+          <li>Size 12 pt font</li>
+          <li>Arial font</li>
+          <li>Double spaced</li>
+        </ul>
+        <li>Package the two files (artistic piece and statement) into a single .zip file and submit the zip file.</li>
+        <li>Zipped file and all internal files must follow the file naming schema.</li>
+        <ul>
+          <li>Submission type for the artist’s statement is still “mixedMedia”</li>
+        </ul>
+      </ul>
+      <br>
+      <h4>Anonymous Confessions:</h4>
+      <ul>
+        <li>Do not include any real names</li>
+        <li>Enter directly via text box on the submissions page</li>
+      </ul>
+    </div>
+
+    <div class="tabContent" id="submissionCategories">
+      <h4>Essay:</h4>
+      <p>2,000 words max</p>
+      <br>
+      <h4>Creative Writing:</h4>
+      <p>Limit TBD</p>
+      <br>
+      <h4>Poetry:</h4>
+      <p>50 lines max</p>
+      <br>
+      <h4>Short Story:</h4>
+      <p>1500 words max</p>
+    </div>
+
+    <div class="tabContent" id="anonymousConfessions">
+      <h4>Anonymous Confessions:</h4>
+      <p>600 words max</p>
+      <p>Have an opinion or an experience you want the world to know about without revealing your name? Confessions are short submissions about your experiences that are completely anonymous.</p>
+    </div>
+
+    <div class="tabContent" id="mixedMedia">
+      <h4>Mixed Media:</h4>
+      <p>Mixed media includes any type of visual submission that demonstrates your experience. This includes photography, illustration, design, etc. It must accompany an artist’s statement, which must not exceed 250 words.</p>
+    </div>
+
+  <div>
+</div>

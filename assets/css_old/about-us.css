@@ -1,0 +1,82 @@
+#slide1 {
+  background-image: url("/assets/img/about-slide1-bg.png");
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+#slide1 h1 {
+  text-align: center;
+  margin: auto;
+  color: var(--main-color);
+}
+
+div.team {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: min-content;
+  margin: auto;
+}
+
+h1.teamtitle {
+  margin-left: 50px;
+}
+
+div.headshots {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+div.teammember {
+  margin: 50px;
+  margin-top: 0;
+}
+
+div.caption {
+  background-image: url("/assets/img/about-nameholder.png");
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+div.caption * {
+  margin: 0;
+  padding-left: 30px;
+}
+
+div.caption h3 {
+  padding-top: 1em;
+  padding-bottom: 5px;
+}
+
+img.photo {
+  width: 340px;
+  height: 300px;
+}
+
+#slide2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100vw;
+  height: 40vh;
+}
+
+#slide2 p {
+  margin: auto;
+  margin-top: 0;
+}
+
+#slide2 a {
+  margin: auto;
+  margin-top: 0;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: white;
+}

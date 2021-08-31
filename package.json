@@ -1,0 +1,22 @@
+{
+  "name": "map-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Muslim Anthology Project website",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salmanfs815/map-frontend.git"
+  },
+  "author": "Salman Siddiqui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salmanfs815/map-frontend/issues"
+  },
+  "homepage": "https://github.com/salmanfs815/map-frontend#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

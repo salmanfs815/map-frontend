@@ -1,0 +1,102 @@
+---
+layout: "base.njk"
+title: "About Us"
+pageId: "about-us"
+teams: [
+  {
+    name: "headteam",
+    title: "Head Team",
+    members: [
+      {
+        name: "Shahira A. Azhar",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/headteam-shahira.png"
+      },
+      {
+        name: "Dostum Khan",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/headteam-dostum.png"
+      },
+      {
+        name: "Amal Javed Abdullah",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/headteam-amal.png"
+      }
+    ]
+  },
+  {
+    name: "designteam",
+    title: "Design & Illustration Team",
+    members: [
+      {
+        name: "Designer One",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/designteam-name1.png"
+      },
+      {
+        name: "Designer Two",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/designteam-name2.png"
+      },
+      {
+        name: "Designer Three",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/designteam-name3.png"
+      }
+    ]
+  },
+  {
+    name: "editorsteam",
+    title: "Editors Team",
+    members: [
+      {
+        name: "Editor One",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/editorsteam-name1.png"
+      },
+      {
+        name: "Editor Two",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/editorsteam-name2.png"
+      },
+      {
+        name: "Editor Three",
+        description: "Lorem ipsum dolar",
+        photo: "/assets/img/editorsteam-name3.png"
+      }
+    ]
+  }
+]
+---
+
+<div id="slide1">
+  <h1>Meet the team who is working<br>hard to bring this project to life!</h1>
+</div>
+
+{% for team in teams %}
+
+  <div class="team" id="{{ team.name }}">
+    <h1 class="teamtitle">{{ team.title }}</h1>
+    <div class="headshots">
+
+      {% for person in team.members %}
+
+        <div class="teammember">
+          <img class="photo" src="{{ person.photo }}" alt="{{ person.name }}">
+          <div class="caption">
+            <h3 class="name">{{ person.name }}</h3>
+            <p class="description">{{ person.description }}</p>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+
+{% endfor %}
+
+<div id="slide2">
+  <p>Got any questions? Want to help with the anthology? Reach out to us and we’ll get in touch soon.</p>
+  <a href="/contact-us/">Contact Us</a>
+</div>

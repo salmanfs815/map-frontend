@@ -1,0 +1,166 @@
+#slide1 {
+  background-image: url("/assets/img/project-slide1-bg.png");
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 70vh;
+}
+
+#slide1 h1 {
+  margin: auto;
+  text-align: center;
+}
+
+#slide2 h1 {
+  margin-left: 2.3em;
+  padding: 1em;
+  /* padding-bottom: 0; */
+  font-size: 2.3em;
+  color: var(--main-color);
+}
+
+#slide2-level1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+#slide2-level2-1 {
+  margin: auto;
+  margin-right: 0;
+}
+
+#slide2-level2-1 img {
+  border-radius: 30px;
+}
+
+#slide2-level2-2 {
+  width: 40vw;
+  margin: auto;
+  left: 50vw;
+}
+
+#slide2-level2-2 p {
+  line-height: 2em;
+  margin: 2em;
+}
+
+#slide3 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: 2em 0;
+}
+
+#slide3-1 {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 20px 40px;
+  padding: 3em 2em 0 3em;
+}
+
+#slide3-1 h1 {
+  color: var(--main-color);
+  text-align: center;
+}
+
+#slide3-1 p {
+  line-height: 2em;
+  text-align: center;
+}
+
+#slide3-1 a {
+  margin: auto;
+  margin-top: 0;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: white;
+}
+
+#slide3-2 {
+  left: 50vw;
+  padding: 1em;
+}
+
+#slide4 {
+  background-image: url("/assets/img/project-slide4-bg.png");
+}
+
+#slide4 h1 {
+  text-align: center;
+  padding: 50px;
+  color: var(--main-color);
+}
+
+#goalContainer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: min-content;
+  padding-bottom: 5em;
+}
+
+div.goal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: white;
+  margin: 10px;
+  padding-top: 1.5em;
+  height: min-content;
+  box-shadow: 10px 5px 5px red;box-shadow: -5px -5px 3px rgba(179, 179, 179, 0.2), 5px 5px 3px rgba(179, 179, 179, 0.2), 5px -5px 3px rgba(179, 179, 179, 0.2), -5px 5px 3px rgba(179, 179, 179, 0.2);
+}
+
+div.goal img.icon {
+  width: min-content;
+  margin: 0 auto;
+}
+
+div.goal h3.goalHeading {
+  text-align: center;
+  margin: 1em auto;
+}
+
+ul.goalList {
+  width: 20vw;
+}
+
+li.goalItem {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+img#goal-narrative {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+img#goal-analysis {
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+#slide5 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 50vh;
+}
+
+#slide5 p {
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+#slide5 a {
+  margin: auto;
+  margin-top: 0;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: white;
+}
