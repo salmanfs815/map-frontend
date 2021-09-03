@@ -1,57 +1,30 @@
-#slide1 {
-  width: 100vw;
-  height: 70vh;
-  background-image: url('/assets/img/guidelines-slide1-bg.png');
+.slide {
   display: flex;
   flex-direction: column;
   align-content: center;
+  align-items: center;
 }
 
-#slide1 h1 {
-  text-align: center;
-  margin: auto;
-  color: var(--main-color);
-}
-
-#slide2 {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 60vh;
-}
-
-#slide2 * {
-  text-align: center;
-  margin: auto;
-}
-
-#slide2 h1 {
-  color: var(--main-color);
-  margin-bottom: 1em;
-}
-
-#slide2 p {
-  width: 70vw;
+.slide-text {
   line-height: 2em;
-  margin-top: 0;
-}
-
-#slide3 {
-  width: 100vw;
-}
-
-#slide3 h1 {
+  padding: 2em;
   text-align: center;
-  color: var(--main-color);
+}
+
+.slide h1 {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+#slide1 {
+  background-image: url("/assets/img/guidelines-slide1-bg.png");
 }
 
 #themeContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 80vw;
-  margin: auto;
-  padding-left: 8em;
+  justify-content: center;
 }
 
 .theme {
@@ -74,47 +47,32 @@
 }
 
 #slide3 p {
-  text-align: center;
   font-weight: bold;
-  width: 60vw;
   margin: 5em auto;
-}
-
-#slide4 h1 {
-  color: var(--main-color);
   text-align: center;
-  font-size: 2em;
-  margin: 4em auto 1em auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-#slide4 > div {
-  background-image: url("/assets/img/guidelines-slide4-bg.png");
-  width: 100vw;
-  height: 75vh;
-}
+
 
 #requirementContainer {
+  background-image: url("/assets/img/guidelines-slide4-bg.png");
   display: flex;
-  flex-direction: row;
-  width: max-content;
-  margin: auto;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .requirement {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  box-shadow: -5px -5px 3px rgba(179, 179, 179, 0.2), 5px 5px 3px rgba(179, 179, 179, 0.2), 5px -5px 3px rgba(179, 179, 179, 0.2), -5px 5px 3px rgba(179, 179, 179, 0.2);
+  box-shadow: -5px -5px 3px rgba(109, 91, 91, 0.2), 5px 5px 3px rgba(179, 179, 179, 0.2), 5px -5px 3px rgba(179, 179, 179, 0.2), -5px 5px 3px rgba(179, 179, 179, 0.2);
   border-radius: 20px;
-  width: 20vw;
-  height: max-content;
   background-color: white;
   padding: 1em;
-  margin: 5em 3em;
-}
-
-#eligibility {
-  margin-top: 12em;
+  margin: 1em 3em;
+  text-align: center;
+  height: max-content;
 }
 
 .requirement .icon {
@@ -124,38 +82,31 @@
 }
 
 .requirement .name {
-  text-align: center;
-  margin-bottom: 0;
+  width: max-content;
+  margin: 1em auto 0 auto;
 }
 
 .requirement .text {
-  margin: 1em;
-  text-align: center;
+  width: auto;
+  margin: 1em auto 0 auto;
   line-height: 1.5em;
-}
-
-#slide5 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 6em;
 }
 
 #tabLinks {
   background-color: white;
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin-top: 3em;
   box-shadow: -5px -5px 3px rgba(179, 179, 179, 0.2), 5px 5px 3px rgba(179, 179, 179, 0.2), 5px -5px 3px rgba(179, 179, 179, 0.2), -5px 5px 3px rgba(179, 179, 179, 0.2);
 }
 
 .tabLink {
+  display: flex;
+  flex-direction: column;
   background-color: inherit;
   border: none;
   cursor: pointer;
   transition: 0.5s;
-  padding: 2em 6em;
-  display: flex;
-  flex-direction: row;
 }
 
 .tabLink:hover {
@@ -178,8 +129,15 @@
 }
 
 #tabbedGuidelines {
-  padding: 2em 10em;
+  display: flex;
+  align-self: flex-start;
+  padding-left: 2em;
+  margin: 2em;
   line-height: 2em;
+}
+
+.tabContent * {
+  overflow-wrap: anywhere;
 }
 
 /* first tab selected by default */
@@ -188,4 +146,48 @@
 }
 #submissionFormat {
   display: block;
+}
+
+@media screen and (max-width: 900px) {
+  /* styles for small screens */
+  #tabbedGuidelines {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* styles for large screens */
+  .tabLink {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  /* styles for larger screens */
+
+  #slide1 h1 {
+    padding: 2em;
+  }
+
+  #requirementContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .requirement {
+    width: 20vw;
+    margin: 5em 3em;
+  }
+
+  #eligibility {
+    margin-top: 14em;
+  }
+
+  #tabLinks {
+    margin: 3em;
+  }
+
+  .tabLink {
+    padding: 2em 6em;
+  }
 }

@@ -6,7 +6,7 @@ footer {
   background: var(--main-color);
   color: white;
   padding: 20px 0;
-
+  margin-top: 2em;
 }
 
 footer a {
@@ -65,4 +65,18 @@ footer p {
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  /* styles for smaller screens */
+  #footer-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* styles for very small screens */
+  footer hr {
+    margin-top: 2em;
+  }
 }

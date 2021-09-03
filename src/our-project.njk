@@ -36,49 +36,48 @@ projectGoals: [
 ]
 ---
 
-<div id="slide1">
+<div id="slide1" class="slide">
   <h1>
-    Learn about what the Muslim Anthology Project
-    <br>
-    entails and the goals it hopes to accomplish
+    Learn about what the Muslim Anthology Project entails and the goals it hopes to accomplish
   </h1>
 </div>
 
-<div id="slide2">
-  <h1>The Muslim Anthology Project</h1>
-  <div id="slide2-level1">
-    <div id="slide2-level2-1">
-      <img src="/assets/img/project-slide2.png" alt="The Muslim Anthology Projoct">
-    </div>
-    <div id="slide2-level2-2">
-      <p>
-        MAP is a compilation of experiences and discourses that take place
-        within the B.C Muslim communities. The goal is to present an authentic
-        narrative about Muslims and Islam which is often overlooked by
-        popular media and academia. 
-      </p>
-      <p>
-        Our shared experiences and discourses make and shape the culture.
-        Experiences include awkward moments of getting caught with your
-        feet in the sink when making wudhu and having to explain hijab to
-        fellow passengers on the bus. Topics such as officially vetting halal
-        restaurants and the legitimacy of celebrating the Prophet
-        Muhammad’s (SAW) birthday are examples of discourses. This variety
-        of experiences and discourses will be used to demonstrate the
-        collective everyday lives of the average Muslim.
-      </p>
-      <p>
-        It should be noted that we recognize and acknowledge our
-        boundaries, and we understand that our project will not be able to
-        represent all voices due to limitations of time and resources.
-      </p>
-    </div>
+<div id="slide2" class="slide">
+  <div id="slide2-pic" class="slide-pic">
+    <img src="/assets/img/project-slide2.png" alt="The Muslim Anthology Projoct">
+  </div>
+  <div id="slide2-text" class="slide-text">
+    <h1 class="slide-heading">The Muslim Anthology Project</h1>
+    <p>
+      MAP is a compilation of experiences and discourses that take place
+      within the B.C Muslim communities. The goal is to present an authentic
+      narrative about Muslims and Islam which is often overlooked by
+      popular media and academia. 
+    </p>
+    <p>
+      Our shared experiences and discourses make and shape the culture.
+      Experiences include awkward moments of getting caught with your
+      feet in the sink when making wudhu and having to explain hijab to
+      fellow passengers on the bus. Topics such as officially vetting halal
+      restaurants and the legitimacy of celebrating the Prophet
+      Muhammad’s (SAW) birthday are examples of discourses. This variety
+      of experiences and discourses will be used to demonstrate the
+      collective everyday lives of the average Muslim.
+    </p>
+    <p>
+      It should be noted that we recognize and acknowledge our
+      boundaries, and we understand that our project will not be able to
+      represent all voices due to limitations of time and resources.
+    </p>
   </div>
 </div>
 
-<div id="slide3">
-  <div id="slide3-1">
-    <h1>Who it involves?</h1>
+<div id="slide3" class="slide">
+  <div id="slide3-pic" class="slide-pic">
+    <img src="/assets/img/project-slide3.png" alt="Who it involves?">
+  </div>
+  <div id="slide3-text" class="slide-text">
+    <h1 class="slide-heading">Who it involves?</h1>
     <p>
       This is a community project. Without the community’s participation, we
       cannot map the Muslim experience in B.C. We want people of any age,
@@ -86,17 +85,12 @@ projectGoals: [
       We want to represent the diversity of Muslims. To be eligible to submit,
       our only requirements are that you are Muslim and living in B.C.
     </p>
-    <a href="/guidelines/">View Guidelines</a>
-  </div>
-  <div id="slide3-2">
-    <img src="/assets/img/project-slide3.png" alt="Who it involves?">
+    <a class="slide-cta" href="/guidelines/">View Guidelines</a>
   </div>
 </div>
 
-<div id="slide4">
-  <div>
-    <h1>Project Goals</h1>
-  </div>
+<div id="slide4" class="slide">
+  <h1 class="slide-heading">Project Goals</h1>
   <div id="goalContainer">
     {% for goal in projectGoals %}
       <div class="goal">
@@ -112,8 +106,10 @@ projectGoals: [
   </div>
 </div>
 
-<div id="slide5">
-  <p>Need some examples of what kinds of content can be submitted to the anthology? Check them out here.</p>
-  {# TODO: link for viewing sample submissions #}
-  <a href="#">View Sample Submissions</a>
+<div id="slide5" class="slide">
+  <div class="slide-text">
+    <p>Need some examples of what kinds of content can be submitted to the anthology? Check them out here.</p>
+    {# TODO: link for viewing sample submissions #}
+    <a class="slide-cta" href="#">View Sample Submissions</a>
+  </div>
 </div>

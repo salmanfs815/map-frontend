@@ -58,25 +58,25 @@ requirements: [
 ]
 ---
 
-<div id="slide1">
-  <h1>
-    Find out the guidelines you need to follow
-    <br>
-    to submit content to the Anthology
-  </h1>
+<div id="slide1" class="slide">
+  <div class="slide-text">
+    <h1>Find out the guidelines you need to follow to submit content to the Anthology</h1>
+  </div>
 </div>
-<div id="slide2">
-  <h1>What We Are Looking For</h1>
-  <p>
-    We are looking for your stories and experiences as a Muslim living in B.C. We want your opinions, ideas, and perspectives in relation to your identity as a
-    Muslim. Did you move here from afar? Are you a mother, and have experiences from raising your children? Are you a student, and something happened
-    in school that you want to tell? Is there a funny story about when you once were making wudu and a non-Muslim came in? Do you have an interesting
-    experience during a protest? Have you faced discriminiation as a Muslim? Were you barred from opportunities because of your gender? What is your
-    experience in the masjid? Give us your stories from your life as a student, something that happened at work, or everyday occurrences, regardless of how
-    mundane and irrelevant it may seem. We want to showcase the collective Muslim experience in the form of essays, short stories, poetry, and visual art.
-  </p>
+<div id="slide2" class="slide">
+  <div class="slide-text">
+    <h1>What We Are Looking For</h1>
+    <p>
+      We are looking for your stories and experiences as a Muslim living in B.C. We want your opinions, ideas, and perspectives in relation to your identity as a
+      Muslim. Did you move here from afar? Are you a mother, and have experiences from raising your children? Are you a student, and something happened
+      in school that you want to tell? Is there a funny story about when you once were making wudu and a non-Muslim came in? Do you have an interesting
+      experience during a protest? Have you faced discriminiation as a Muslim? Were you barred from opportunities because of your gender? What is your
+      experience in the masjid? Give us your stories from your life as a student, something that happened at work, or everyday occurrences, regardless of how
+      mundane and irrelevant it may seem. We want to showcase the collective Muslim experience in the form of essays, short stories, poetry, and visual art.
+    </p>
+  </div>
 </div>
-<div id="slide3">
+<div id="slide3" class="slide">
   <h1>Possible Themes or Topics</h1>
   <div id="themeContainer">
     {% for theme in themes %}
@@ -90,22 +90,20 @@ requirements: [
     These are just examples and you are not restricted to any these themes or topics. If you’d like to run your idea by us before you start working on it, feel free to send an email.
   </p>
 </div>
-<div id="slide4">
+<div id="slide4" class="slide">
   <h1>Other Requirements & Specifications</h1>
-  <div>
-    <div id="requirementContainer">
-      {% for spec in requirements %}
-        <div class="requirement" id="{{ spec.id }}">
-          <img class="icon" src="{{ spec.icon }}" alt="{{ spec.name }}">
-          <h4 class="name">{{ spec.name }}</h4>
-          <p class="text">{{ spec.text | safe }}</p>
-        </div>
-      {% endfor %}
-    </div>
+  <div id="requirementContainer">
+    {% for spec in requirements %}
+      <div class="requirement" id="{{ spec.id }}">
+        <img class="icon" src="{{ spec.icon }}" alt="{{ spec.name }}">
+        <h4 class="name">{{ spec.name }}</h4>
+        <p class="text">{{ spec.text | safe }}</p>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
-<div id="slide5">
+<div id="slide5" class="slide">
 
   <div id="tabLinks">
     <button class="tabLink active" id="formatButton">

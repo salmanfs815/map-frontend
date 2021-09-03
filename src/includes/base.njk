@@ -17,9 +17,10 @@ instagramLink: "#"
   <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href={{ cssPath | safe | replace("file", pageId) }}>
 </head>
+
 <body>
 
-  {# <header>
+  <header>
     <nav id="navbar">
       <span class="navbar-toggle">
         <img id="nav-menu-toggle" src="/assets/img/nav-menu-bars.svg">
@@ -33,13 +34,13 @@ instagramLink: "#"
         <li><a class="nav-links nav-buttons" id="contact-button" href="/contact-us/">Contact Us</a></li>
       </ul>
     </nav>
-  </header> #}
+  </header>
 
   <main>
     {{ content | safe }}
   </main>
 
-  {# <footer>
+  <footer>
     <nav>
       <div><a class="footer-logo" href="/">Muslim Anthology Project</a></div>
       <ul id="footer-menu">
@@ -57,11 +58,12 @@ instagramLink: "#"
     </nav>
     <hr>
     <p>© 2020 Muslim Anthology Project. All rights reserved.</p>
-  </footer> #}
+  </footer>
 
   <script src="/assets/js/navbar.js"></script>
   {% if pageId === "guidelines" %}
     <script src="/assets/js/guidelines.js"></script>
   {% endif %}
 </body>
+
 </html>

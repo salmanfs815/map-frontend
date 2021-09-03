@@ -1,0 +1,27 @@
+:root {
+  --main-color: rgb(37, 31, 102);
+}
+
+* {
+  max-width: 100vw;
+}
+
+body {
+  margin: 0px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a.nav-logo {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 70px;
+}
+
+h1 {
+  color: var(--main-color);
+}
