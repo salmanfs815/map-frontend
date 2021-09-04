@@ -16,6 +16,9 @@ instagramLink: "#"
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href={{ cssPath | safe | replace("file", pageId) }}>
+  {% if pageId === "submit-entry" %}
+    <link rel="stylesheet" href="/assets/css/flickity.css" media="screen">
+  {% endif %}
 </head>
 
 <body>
@@ -63,6 +66,10 @@ instagramLink: "#"
   <script src="/assets/js/navbar.js"></script>
   {% if pageId === "guidelines" %}
     <script src="/assets/js/guidelines.js"></script>
+  {% endif %}
+  {% if pageId === "submit-entry" %}
+    <script src="/assets/js/submit-entry.js"></script>
+    <script src="/assets/js/flickity.pkgd.min.js"></script>
   {% endif %}
 </body>
 

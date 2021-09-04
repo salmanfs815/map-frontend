@@ -1,5 +1,95 @@
 ---
 layout: "base.njk"
 title: "Submit Entry"
+pageId: "submit-entry"
+submissions: [
+  {
+    type: "poetrySubmissions",
+    title: "Poetry",
+    samples: [
+      "/assets/img/entries-poetry-1.png",
+      "/assets/img/entries-poetry-2.png",
+      "/assets/img/entries-poetry-3.png"
+    ]
+  },
+  {
+    type: "illustrationSubmissions",
+    title: "Illustrations",
+    samples: [
+      "/assets/img/entries-illustrations-1.png",
+      "/assets/img/entries-illustrations-2.png",
+      "/assets/img/entries-illustrations-3.png"
+    ]
+  },
+  {
+    type: "essaySubmissions",
+    title: "Essays",
+    samples: [
+      "/assets/img/entries-essays-1.png",
+      "/assets/img/entries-essays-2.png",
+      "/assets/img/entries-essays-3.png"
+    ]
+  }
+]
 ---
 
+<div id="slide1" class="slide">
+  <div class="slide-text">
+    <h1>Upload your work to the anthology here</h1>
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <div id="uploadForm">
+    <h1>Upload Files Here</h1>
+    {# update form action with API endpoint #}
+    <form action="#" method="post">
+      <div id="formDiv">
+        <fieldset id="metaFieldset">
+          <input class="formField" type="text" id="inputName" name="name" placeholder="Full Name" required>
+          <input class="formField" type="email" id="inputEmail" name="email" placeholder="Email Address" required>
+          <select class="formField" name="type" id="inputType" required>
+            <option disabled selected value>Submission Type</option>
+            <option value="essay">Essay</option>
+            <option value="creative">Creative Writing</option>
+            <option value="poetry">Poetry</option>
+            <option value="short">Short Story</option>
+            <option value="mixed">Mixed Media</option>
+          </select>
+          <input class="formField" type="text" id="inputTitle" name="title" placeholder="Submission Title" required>
+        </fieldset>
+        <fieldset id="fileFieldset">
+          <label for="fileUpload">Select file(s) or drop them into dotted region below:</label>
+          <input class="formField" type="file" id="fileUpload" name="files" multiple required>
+        </fieldset>
+      </div>
+      <div>
+        <button type="reset">Cancel Upload</button>
+        <button type="submit">Upload Files</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="slide3">
+  <h1 id="sample-submissions">Look At What Others Have Submitted</h1>
+  {% for category in submissions %}
+    <h2>{{category.title}}<h2>
+    <div id="{{ category.type }}"
+         class="submissions gallery js-flickity"
+         data-flickity-options='{ "wrapAround": true }'>
+      {% for sample in category.samples %}
+        <div class="sampleSubmission gallery-cell">
+          <img src="{{ sample }}" alt="Submission Sample">
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+
+<div id="slide4" class="slide">
+  <div class="slide-text">
+    <p>Interested in submitting to the anthology? Please make sure to read the guidelines before submission.</p>
+    <a class="slide-cta" href="/guidelines">View Guidelines</a>
+  </div>
+</div>

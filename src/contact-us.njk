@@ -1,5 +1,26 @@
 ---
 layout: "base.njk"
 title: "Contact Us"
+pageId: "contact-us"
 ---
 
+<div id="slide1" class="slide">
+  <div class="slide-text">
+    <h1>Have additional questions or queries?</h1>
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <h1>Contact Us</h1>
+  <div id="formDiv">
+    <div id="form-pic">
+      <img src="/assets/img/contact-form-pic.png" alt="Contact Us">
+    </div>
+    <form action="#" method="post">
+      <input class="formField" type="text" id="inputName" name="name" placeholder="Full Name" required>
+      <input class="formField" type="email" id="inputEmail" name="email" placeholder="Email Address" required>
+      <textarea class="formField" id="inputMessage" name="message" required>Write here...</textarea>
+      <button type="submit" class="slide-cta">Send</button>
+    </form>
+  </div>
+</div>
