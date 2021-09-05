@@ -16,11 +16,18 @@ pageId: "contact-us"
     <div id="form-pic">
       <img src="/assets/img/contact-form-pic.png" alt="Contact Us">
     </div>
-    <form action="#" method="post">
-      <input class="formField" type="text" id="inputName" name="name" placeholder="Full Name" required>
-      <input class="formField" type="email" id="inputEmail" name="email" placeholder="Email Address" required>
-      <textarea class="formField" id="inputMessage" name="message" required>Write here...</textarea>
-      <button type="submit" class="slide-cta">Send</button>
-    </form>
+    <div>
+      <div id="successMsg">
+        <h2>We've received your message.<br>Thanks for reaching out!</h2>
+      </div>
+      <form id="contactForm" action="http://localhost:5000/contact" method="post">
+        <fieldset>
+          <input class="formField" type="text" id="inputName" name="name" placeholder="Full Name" required>
+          <input class="formField" type="email" id="inputEmail" name="email" placeholder="Email Address" required>
+          <textarea class="formField" id="inputMessage" name="message" placeholder="Write your message here..." required></textarea>
+          <button type="submit" class="slide-cta">Send</button>
+        </fieldset>
+      </form>
+    </div>
   </div>
 </div>

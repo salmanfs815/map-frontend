@@ -25,10 +25,31 @@
   display: none; /* don't display on small screens */
 }
 
-#slide2 form {
+#successMsg {
+  display: flex;
+  width: 40vw;
+  height: 100%;
+}
+
+#successMsg h2 {
+  text-align: center;
+  height: max-content;
+  margin: auto;
+}
+
+#contactForm {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#contactForm fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: max-content;
 }
 
 .formField {
@@ -64,9 +85,10 @@ form button[type=submit] {
     height: auto;
   }
 
-  #formDiv form {
+  #contactForm {
     width: 40vw;
     margin: 2em;
+    height: 100%;
     justify-content: center;
   }
 
