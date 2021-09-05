@@ -42,25 +42,28 @@ submissions: [
 <div id="slide2" class="slide">
   <div id="uploadForm">
     <h1>Upload Files Here</h1>
-    {# update form action with API endpoint #}
-    <form action="#" method="post">
+    <div id="successMsg">
+      <h3>Thank you for your submission!</h3>
+      <a id="anotherSubmissionBtn" class="slide-cta" href="#">Make Another Submission</a>
+    </div>
+    <form id="submissionForm" action="http://localhost:5000/submission" method="POST" enctype="multipart/form-data">
       <div id="formDiv">
         <fieldset id="metaFieldset">
           <input class="formField" type="text" id="inputName" name="name" placeholder="Full Name" required>
           <input class="formField" type="email" id="inputEmail" name="email" placeholder="Email Address" required>
           <select class="formField" name="type" id="inputType" required>
             <option disabled selected value>Submission Type</option>
-            <option value="essay">Essay</option>
-            <option value="creative">Creative Writing</option>
-            <option value="poetry">Poetry</option>
-            <option value="short">Short Story</option>
-            <option value="mixed">Mixed Media</option>
+            <option value="Essay">Essay</option>
+            <option value="Creative Writing">Creative Writing</option>
+            <option value="Poetry">Poetry</option>
+            <option value="Short Story">Short Story</option>
+            <option value="Mixed Media">Mixed Media</option>
           </select>
           <input class="formField" type="text" id="inputTitle" name="title" placeholder="Submission Title" required>
         </fieldset>
         <fieldset id="fileFieldset">
           <label for="fileUpload">Select file(s) or drop them into dotted region below:</label>
-          <input class="formField" type="file" id="fileUpload" name="files" multiple required>
+          <input class="formField" type="file" id="fileUpload" name="submission" multiple required>
         </fieldset>
       </div>
       <div>

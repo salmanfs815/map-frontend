@@ -29,6 +29,19 @@
   background-image: url("/assets/img/hero-bg-pattern.png");
 }
 
+#successMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#successMsg a {
+  width: max-content;
+  margin: auto;
+  padding: 0.5em 1em;
+}
+
 #uploadForm form {
   display: flex;
   flex-direction: column;
