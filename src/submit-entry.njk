@@ -46,7 +46,8 @@ submissions: [
       <h3>Thank you for your submission!</h3>
       <a id="anotherSubmissionBtn" class="slide-cta" href="#">Make Another Submission</a>
     </div>
-    <form id="submissionForm" action="http://map-flask-env.eba-mmp3umuc.us-west-2.elasticbeanstalk.com/submission" method="POST" enctype="multipart/form-data">
+    {# <form id="submissionForm" action="http://localhost:5000/submission" method="POST" enctype="multipart/form-data"> #}
+    <form id="submissionForm" action="http://map-flask-eb.eba-mmp3umuc.us-west-2.elasticbeanstalk.com/submission" method="POST" enctype="multipart/form-data">
       <div id="formDiv">
         <fieldset id="metaFieldset">
           <input class="formField" type="text" id="inputName" name="name" placeholder="Full Name" required>
